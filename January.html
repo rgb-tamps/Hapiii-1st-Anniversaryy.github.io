@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>January(2024)</title>
+    <style>
+       body {
+    background-image: url(./Lover\ Background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgb(105, 143, 180);
+    border-radius: 5px;
+    border: none; /* Fixed border issue */
+    margin: 10px;
+    padding: 10px ; /* Adjusted padding */
+    text-align: center;
+    position: fixed;
+    bottom: 20px; /* Adjusted for mobile */
+    right: 50px; /* Adjusted for mobile */
+    z-index: 1000; /* Ensure button is on top */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+        button:hover {
+            background-color: rgb(85, 123, 160);
+        }
+
+        button:active {
+            background-color: rgb(65, 103, 140);
+            transform: translateY(2px);
+        }
+
+a {
+    text-decoration: none;
+    color: rgb(245, 230, 199);
+    padding: 10px 60px;
+    
+}
+
+.containermain {
+background-color: rgba(179, 191, 217, 0.5);
+border-radius: 10px;
+width: 95%; /* Use 95% for mobile */
+margin: 10px auto;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 3 columns */
+gap: 10px; /* Space between images */
+box-sizing: border-box;
+}
+
+.card-image {
+background-color: #f8f8f8;
+height: 440px; /* Adjusted height */
+border-radius: 15px;
+background-size: cover;
+margin: 10px;
+}
+
+.pics {
+margin: 5px; /* This can be removed */
+gap: 10px;
+
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted */
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+.videos-grid {
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.screen1, .screen2 {
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Background images for the pictures */
+.pic1 { background-image: url('./JANUARY(24)/1.jpg'); }
+.pic2 { background-image: url('./JANUARY(24)/2.jpg'); }
+.pic3 { background-image: url('./JANUARY(24)/3.jpg'); }
+.pic4 { background-image: url('./JANUARY(24)/4.jpg'); }
+.pic5 { background-image: url('./JANUARY(24)/5.jpg'); }
+.pic6 { background-image: url('./JANUARY(24)/6.jpg'); }
+.pic7 { background-image: url('./JANUARY(24)/7.jpg'); }
+.pic8 { background-image: url('./JANUARY(24)/8.jpg'); }
+.pic9 { background-image: url('./JANUARY(24)/9.jpg'); }
+.pic10 { background-image: url('./JANUARY(24)/10.jpg'); }
+.pic11 { background-image: url('./JANUARY(24)/11.jpg') }
+.pic12 { background-image: url('./JANUARY(24)/12.jpg'); }
+.pic13 { background-image: url('./JANUARY(24)/13.jpg'); }
+.pic14 { background-image: url('./JANUARY(24)/14.jpg'); }
+.pic15 { background-image: url('./JANUARY(24)/15.jpg'); }
+.pic16 { background-image: url('./JANUARY(24)/16.jpg'); }
+.pic17 { background-image: url('./JANUARY(24)/17.jpg'); }
+.pic18 { background-image: url('./JANUARY(24)/18.jpg'); }
+.pic19 { background-image: url('./JANUARY(24)/19.jpg'); }
+.pic20 { background-image: url('./JANUARY(24)/20.jpg'); }
+.pic21 { background-image: url('./JANUARY(24)/21.jpg'); }
+.pic22 { background-image: url('./JANUARY(24)/22.jpg'); }
+.pic23 { background-image: url('./JANUARY(24)/23.jpg'); }
+.pic24 { background-image: url('./JANUARY(24)/24.jpg'); }
+.pic25 { background-image: url('./JANUARY(24)/25.jpg'); }
+.pic26 { background-image: url('./JANUARY(24)/26.jpg'); }
+.pic27 { background-image: url('./JANUARY(24)/27.jpg'); }
+.pic28 { background-image: url('./JANUARY(24)/28.jpg'); }
+.pic29 { background-image: url('./JANUARY(24)/29.jpg'); }
+.pic30 { background-image: url('./JANUARY(24)/30.jpg'); }
+.pic31 { background-image: url('./JANUARY(24)/31.jpg'); }
+.pic32 { background-image: url('./JANUARY(24)/32.jpg'); }
+.pic33 { background-image: url('./JANUARY(24)/33.jpg'); }
+.pic34 { background-image: url('./JANUARY(24)/34.jpg'); }
+.pic35 { background-image: url('./JANUARY(24)/35.jpg'); }
+.pic36 { background-image: url('./JANUARY(24)/36.jpg'); }
+.pic37 { background-image: url('./JANUARY(24)/37.jpg'); }
+.pic38 { background-image: url('./JANUARY(24)/38.jpg'); }
+.pic39 { background-image: url('./JANUARY(24)/39.jpg'); }
+.pic40 { background-image: url('./JANUARY(24)/40.jpg'); }
+.pic41 { background-image: url('./JANUARY(24)/41.jpg'); }
+.pic42 { background-image: url('./JANUARY(24)/42.jpg'); }
+.pic43 { background-image: url('./JANUARY(24)/43.jpg'); }
+.pic44 { background-image: url('./JANUARY(24)/44.jpg'); }
+.pic45 { background-image: url('./JANUARY(24)/46.jpg'); }
+.pic46 { background-image: url('./JANUARY(24)/47.jpg'); }
+.pic47 { background-image: url('./JANUARY(24)/48.jpg'); }
+.pic48 { background-image: url('./JANUARY(24)/49.jpg'); }
+.pic49 { background-image: url('./JANUARY(24)/50.jpg'); }
+.pic50 { background-image: url('./JANUARY(24)/51.jpg'); }
+.pic51 { background-image: url('./JANUARY(24)/52.jpg'); }
+.pic52 { background-image: url('./JANUARY(24)/53.jpg'); }
+.pic53 { background-image: url('./JANUARY(24)/54.jpg'); }
+.pic54 { background-image: url('./JANUARY(24)/55.jpg'); }
+.pic55 { background-image: url('./JANUARY(24)/56.jpg'); }
+.pic56 { background-image: url('./JANUARY(24)/57.jpg'); }
+.pic57 { background-image: url('./JANUARY(24)/58.jpg'); }
+.pic58 { background-image: url('./JANUARY(24)/59.jpg'); }
+.pic59 { background-image: url('./JANUARY(24)/60.jpg'); }
+.pic60 { background-image: url('./JANUARY(24)/61.jpg'); }
+.pic61 { background-image: url('./JANUARY(24)/62.jpg'); }
+.pic62 { background-image: url('./JANUARY(24)/63.jpg'); }
+.pic63 { background-image: url('./JANUARY(24)/64.jpg'); }
+.pic64 { background-image: url('./JANUARY(24)/65.jpg'); }
+.pic65 { background-image: url('./JANUARY(24)/66.jpg'); }
+.pic66 { background-image: url('./JANUARY(24)/67.jpg'); }
+.pic67 { background-image: url('./JANUARY(24)/68.jpg'); }
+.pic68 { background-image: url('./JANUARY(24)/69.jpg'); }
+.pic69 { background-image: url('./JANUARY(24)/70.jpg'); }
+.pic70 { background-image: url('./JANUARY(24)/71.jpg'); }
+.pic71 { background-image: url('./JANUARY(24)/72.jpg'); }
+.pic72 { background-image: url('./JANUARY(24)/73.jpg'); }
+.pic73 { background-image: url('./JANUARY(24)/74.jpg'); }
+.pic74 { background-image: url('./JANUARY(24)/75.jpg'); }
+.pic75 { background-image: url('./JANUARY(24)/76.jpg'); }
+.pic76 { background-image: url('./JANUARY(24)/77.jpg'); }
+.pic77 { background-image: url('./JANUARY(24)/78.jpg'); }
+.pic78 { background-image: url('./JANUARY(24)/79.jpg'); }
+.pic79 { background-image: url('./JANUARY(24)/80.jpg'); }
+.pic80 { background-image: url('./JANUARY(24)/81.jpg'); }
+.pic81 { background-image: url('./JANUARY(24)/82.jpg'); }
+.pic82 { background-image: url('./JANUARY(24)/83.jpg'); }
+.pic83 { background-image: url('./JANUARY(24)/84.jpg'); }
+.pic84 { background-image: url('./JANUARY(24)/85.jpg'); }
+.pic85 { background-image: url('./JANUARY(24)/86.jpg'); }
+.pic86 { background-image: url('./JANUARY(24)/87.jpg'); }
+.pic87 { background-image: url('./JANUARY(24)/88.jpg'); }
+.pic88 { background-image: url('./JANUARY(24)/89.jpg'); }
+.pic89 { background-image: url('./JANUARY(24)/90.jpg'); }
+.pic90 { background-image: url('./JANUARY(24)/91.jpg'); }
+.pic91 { background-image: url('./JANUARY(24)/92.jpg'); }
+.pic92 { background-image: url('./JANUARY(24)/93.jpg'); }
+.pic93 { background-image: url('./JANUARY(24)/94.jpg'); }
+.pic94 { background-image: url('./JANUARY(24)/95.jpg'); }
+.pic95 { background-image: url('./JANUARY(24)/96.jpg'); }
+.pic96 { background-image: url('./JANUARY(24)/97.jpg'); }
+.pic97 { background-image: url('./JANUARY(24)/98.jpeg'); }
+.pic98 { background-image: url('./JANUARY(24)/99.jpg'); }
+.pic99 { background-image: url('./JANUARY(24)/100.jpeg'); }
+.pic100 { background-image: url('./JANUARY(24)/101.jpeg'); }
+.pic101 { background-image: url('./JANUARY(24)/102.jpeg'); }
+.pic102 { background-image: url('./JANUARY(24)/103.jpeg'); }
+.pic103 { background-image: url('./JANUARY(24)/104.jpeg'); }
+.pic104 { background-image: url('./JANUARY(24)/105.jpeg'); }
+.pic105 { background-image: url('./JANUARY(24)/106.jpeg'); }
+.pic106 { background-image: url('./JANUARY(24)/107.jpeg'); }
+.pic107 { background-image: url('./JANUARY(24)/108.jpeg'); }
+.pic108 { background-image: url('./JANUARY(24)/109.jpeg'); }
+.pic109 { background-image: url('./JANUARY(24)/110.jpeg'); }
+.pic110 { background-image: url('./JANUARY(24)/111.jpeg'); }
+.pic111 { background-image: url('./JANUARY(24)/112.jpeg'); }
+.pic112 { background-image: url('./JANUARY(24)/113.jpeg'); }
+.pic113 { background-image: url('./JANUARY(24)/114.jpeg'); }
+.pic114 { background-image: url('./JANUARY(24)/115.jpeg'); }
+.pic115 { background-image: url('./JANUARY(24)/116.jpeg'); }
+.pic116 { background-image: url('./JANUARY(24)/117.jpeg'); }
+.pic117 { background-image: url('./JANUARY(24)/118.jpeg'); }
+.pic118 { background-image: url('./JANUARY(24)/119.jpeg'); }
+.pic119 { background-image: url('./JANUARY(24)/120.jpeg'); }
+.pic120 { background-image: url('./JANUARY(24)/121.jpeg'); }
+.pic121 { background-image: url('./JANUARY(24)/122.jpeg'); }
+.pic122 { background-image: url('./JANUARY(24)/123.jpeg'); }
+.pic123 { background-image: url('./JANUARY(24)/124.jpeg'); }
+.pic124 { background-image: url('./JANUARY(24)/125.jpeg'); }
+.pic125 { background-image: url('./JANUARY(24)/126.jpeg'); }
+.pic126 { background-image: url('./JANUARY(24)/127.jpeg'); }
+.pic127 { background-image: url('./JANUARY(24)/128.jpeg'); }
+.pic128 { background-image: url('./JANUARY(24)/129.jpeg'); }
+.pic129 { background-image: url('./JANUARY(24)/130.jpeg'); }
+.pic130 { background-image: url('./JANUARY(24)/131.jpeg'); }
+.pic131 { background-image: url('./JANUARY(24)/132.jpeg'); }
+.pic132 { background-image: url('./JANUARY(24)/133.jpeg'); }
+.pic133 { background-image: url('./JANUARY(24)/134.jpeg'); }
+.pic134 { background-image: url('./JANUARY(24)/135.jpeg'); }
+.pic135 { background-image: url('./JANUARY(24)/136.jpeg'); }
+.pic136 { background-image: url('./JANUARY(24)/137.jpeg'); }
+.pic137 { background-image: url('./JANUARY(24)/138.jpeg'); }
+.pic138 { background-image: url('./JANUARY(24)/139.jpeg'); }
+.pic139 { background-image: url('./JANUARY(24)/140.jpeg'); }
+.pic140 { background-image: url('./JANUARY(24)/141.jpeg'); }
+.pic141 { background-image: url('./JANUARY(24)/142.jpeg'); }
+.pic142 { background-image: url('./JANUARY(24)/143.jpeg'); }
+.pic143 { background-image: url('./JANUARY(24)/144.jpeg'); }
+.pic144 { background-image: url('./JANUARY(24)/145.jpeg'); }
+.pic145 { background-image: url('./JANUARY(24)/146.jpeg'); }
+.pic146 { background-image: url('./JANUARY(24)/147.jpeg'); }
+.pic147 { background-image: url('./JANUARY(24)/148.jpeg'); }
+.pic148 { background-image: url('./JANUARY(24)/149.jpeg'); }
+.pic149 { background-image: url('./JANUARY(24)/150.jpeg'); }
+.pic150 { background-image: url('./JANUARY(24)/151.jpeg'); }
+.pic151 { background-image: url('./JANUARY(24)/152.jpeg'); }
+.pic152 { background-image: url('./JANUARY(24)/153.jpeg'); }
+.pic153 { background-image: url('./JANUARY(24)/154.jpeg'); }
+.pic154 { background-image: url('./JANUARY(24)/155.jpeg'); }
+.pic155 { background-image: url('./JANUARY(24)/156.jpeg'); }
+.pic156 { background-image: url('./JANUARY(24)/157.jpeg'); }
+.pic157 { background-image: url('./JANUARY(24)/158.jpeg'); }
+.pic158 { background-image: url('./JANUARY(24)/159.jpeg');}
+.pic159 { background-image: url('./JANUARY(24)/160.jpeg') }
+.pic160 { background-image: url('./JANUARY(24)/161.jpeg'); }
+.pic161 { background-image: url('./JANUARY(24)/162.jpeg'); }
+.pic162 { background-image: url('./JANUARY(24)/163.jpeg'); }
+.pic163 { background-image: url('./JANUARY(24)/164.jpeg'); }
+.pic164 { background-image: url('./JANUARY(24)/165.jpeg'); }
+.pic165 { background-image: url('./JANUARY(24)/166.jpeg'); }
+.pic166 { background-image: url('./JANUARY(24)/167.jpeg'); }
+.pic167 { background-image: url('./JANUARY(24)/168.jpeg'); }
+.pic168 { background-image: url('./JANUARY(24)/169.jpeg'); }
+.pic169 { background-image: url('./JANUARY(24)/170.jpeg'); }
+.pic170 { background-image: url('./JANUARY(24)/171.jpeg'); }
+.pic171 { background-image: url('./JANUARY(24)/172.jpeg'); }
+.pic172 { background-image: url('./JANUARY(24)/173.jpeg'); }
+.pic173 { background-image: url('./JANUARY(24)/174.jpeg'); }
+.pic174 { background-image: url('./JANUARY(24)/175.jpeg'); }
+.pic175 { background-image: url('./JANUARY(24)/176.jpeg'); }
+.pic176 { background-image: url('./JANUARY(24)/177.jpeg'); }
+.pic177 { background-image: url('./JANUARY(24)/178.jpeg'); }
+.pic178 { background-image: url('./JANUARY(24)/179.jpeg'); }
+.pic179 { background-image: url('./JANUARY(24)/180.jpeg'); }
+.pic180 { background-image: url('./JANUARY(24)/181.jpeg'); }
+.pic181 { background-image: url('./JANUARY(24)/182.jpeg'); }
+.pic182 { background-image: url('./JANUARY(24)/183.jpeg'); }
+.pic183 { background-image: url('./JANUARY(24)/184.jpeg'); }
+.pic184 { background-image: url('./JANUARY(24)/185.jpeg'); }
+.pic185 { background-image: url('./JANUARY(24)/186.jpeg'); }
+.pic186 { background-image: url('./JANUARY(24)/187.jpeg'); }
+.pic187 { background-image: url('./JANUARY(24)/188.jpeg'); }
+.pic188 { background-image: url('./JANUARY(24)/189.jpeg'); }
+.pic189 { background-image: url('./JANUARY(24)/190.jpeg'); }
+.pic190 { background-image: url('./JANUARY(24)/191.jpeg'); }
+.pic191 { background-image: url('./JANUARY(24)/192.jpeg'); }
+.pic192 { background-image: url('./JANUARY(24)/193.jpeg'); }
+.pic193 { background-image: url('./JANUARY(24)/194.jpg'); }
+.pic194 { background-image: url('./JANUARY(24)/195.jpg'); }
+.pic195 { background-image: url('./JANUARY(24)/196.jpeg'); }
+.pic196 { background-image: url('./JANUARY(24)/197.jpeg'); }
+.pic197 { background-image: url('./JANUARY(24)/198.jpg'); }
+.pic198 { background-image: url('./JANUARY(24)/199.jpg'); }
+.pic199 { background-image: url('./JANUARY(24)/200.jpg'); }
+.pic200 { background-image: url('./JANUARY(24)/201.jpg'); }
+.pic201 { background-image: url('./JANUARY(24)/202.jpg'); }
+.pic202 { background-image: url('./JANUARY(24)/203.jpg'); }
+.pic203 { background-image: url('./JANUARY(24)/204.jpg'); }
+.pic204 { background-image: url('./JANUARY(24)/205.jpg'); }
+.pic205 { background-image: url('./JANUARY(24)/206.jpg'); }
+.pic206 { background-image: url('./JANUARY(24)/207.jpg'); }
+.pic207 { background-image: url('./JANUARY(24)/208.jpg'); }
+.pic208 { background-image: url('./JANUARY(24)/209.jpg'); }
+.pic209 { background-image: url('./JANUARY(24)/210.jpg'); }
+.pic210 { background-image: url('./JANUARY(24)/211.jpg'); }
+.pic211 { background-image: url('./JANUARY(24)/212.jpeg'); }
+.pic212 { background-image: url('./JANUARY(24)/45.jpg'); }
+
+
+
+
+
+        @media (max-width: 600px) {
+            * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  } 
+            button {
+                width: 90%; /* Full width button on mobile */
+                padding: 15px 30px; /* More padding */
+                right: auto;
+            }
+            a {
+                padding: 10px 100px;
+            }
+        
+            .containermain {
+        border-radius: 10px;
+         width: 100%; /* Use 95% for mobile */
+         margin: 5px 0;
+         padding: 5px 0;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr); /* 3 columns */
+         gap: 10px; /* Space between images */
+         box-sizing: border-box;
+}
+
+.card-image {
+            height: 190px; /* Smaller images for mobile */
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .pics {
+            margin: 0.005rem;
+        }
+            .videos video {
+                width: 150%; /* Full width videos */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="screen1">
+        <div class="containermain">
+            <div class="pics">
+                <div class="card-image pic1"></div>
+                <div class="card-image pic2"></div>      
+                <div class="card-image pic3"></div>      
+                <div class="card-image pic4"></div>   
+                <div class="card-image pic5"></div>
+                <div class="card-image pic6"></div>
+                <div class="card-image pic7"></div>
+                <div class="card-image pic8"></div>
+                <div class="card-image pic9"></div>
+                <div class="card-image pic10"></div>
+                <div class="card-image pic11"></div>
+                <div class="card-image pic12"></div> 
+                <div class="card-image pic13"></div>      
+                <div class="card-image pic14"></div>   
+                <div class="card-image pic15"></div>
+                <div class="card-image pic16"></div>
+                <div class="card-image pic17"></div>
+                <div class="card-image pic18"></div>
+                <div class="card-image pic19"></div>
+                <div class="card-image pic20"></div>
+                <div class="card-image pic21"></div>
+                <div class="card-image pic22"></div> 
+                <div class="card-image pic23"></div>      
+                <div class="card-image pic24"></div>   
+                <div class="card-image pic25"></div>
+                <div class="card-image pic26"></div>
+                <div class="card-image pic27"></div>
+                <div class="card-image pic28"></div>
+                <div class="card-image pic29"></div>
+                <div class="card-image pic30"></div>
+                <div class="card-image pic31"></div>   
+                <div class="card-image pic32"></div>  
+                <div class="card-image pic33"></div>      
+                <div class="card-image pic34"></div>   
+                <div class="card-image pic35"></div>
+                <div class="card-image pic36"></div>
+                <div class="card-image pic37"></div>
+                <div class="card-image pic38"></div>
+                <div class="card-image pic39"></div>
+                <div class="card-image pic40"></div>
+                <div class="card-image pic41"></div>
+                <div class="card-image pic42"></div>
+                <div class="card-image pic43"></div>
+                <div class="card-image pic44"></div>
+                <div class="card-image pic45"></div>
+                <div class="card-image pic46"></div>
+                <div class="card-image pic47"></div>   
+                <div class="card-image pic48"></div>  
+                <div class="card-image pic49"></div>      
+                <div class="card-image pic50"></div>   
+                <div class="card-image pic51"></div>
+                <div class="card-image pic52"></div>
+                <div class="card-image pic53"></div>                  
+            </div>
+            <div class="pics">     
+                <div class="card-image pic54"></div>
+                <div class="card-image pic55"></div>
+                <div class="card-image pic56"></div>
+                <div class="card-image pic57"></div>
+                <div class="card-image pic58"></div>
+                <div class="card-image pic59"></div>
+                <div class="card-image pic60"></div>
+                <div class="card-image pic61"></div>
+                <div class="card-image pic62"></div>
+                <div class="card-image pic63"></div>   
+                <div class="card-image pic64"></div>  
+                <div class="card-image pic65"></div>      
+                <div class="card-image pic66"></div>   
+                <div class="card-image pic67"></div>
+                <div class="card-image pic68"></div>
+                <div class="card-image pic69"></div>
+                <div class="card-image pic70"></div>
+                <div class="card-image pic71"></div>
+                <div class="card-image pic72"></div>
+                <div class="card-image pic73"></div>
+                <div class="card-image pic74"></div>
+                <div class="card-image pic75"></div>
+                <div class="card-image pic76"></div>
+                <div class="card-image pic77"></div>
+                <div class="card-image pic78"></div>
+                <div class="card-image pic79"></div>   
+                <div class="card-image pic80"></div>  
+                <div class="card-image pic81"></div>      
+                <div class="card-image pic82"></div>   
+                <div class="card-image pic83"></div>
+                <div class="card-image pic84"></div>
+                <div class="card-image pic85"></div>
+                <div class="card-image pic86"></div>
+                <div class="card-image pic87"></div>      
+                <div class="card-image pic88"></div>      
+                <div class="card-image pic89"></div>
+                <div class="card-image pic90"></div>  
+                <div class="card-image pic91"></div>
+                <div class="card-image pic92"></div>      
+                <div class="card-image pic93"></div>      
+                <div class="card-image pic94"></div>   
+                <div class="card-image pic95"></div>
+                <div class="card-image pic96"></div>
+                <div class="card-image pic97"></div>
+                <div class="card-image pic98"></div>
+                <div class="card-image pic99"></div>
+                <div class="card-image pic100"></div>
+                <div class="card-image pic101"></div>
+                <div class="card-image pic102"></div> 
+                <div class="card-image pic103"></div>      
+                <div class="card-image pic104"></div>   
+                <div class="card-image pic105"></div>
+                <div class="card-image pic106"></div>   
+                    
+            </div>
+            <div class="pics">  
+               
+                <div class="card-image pic107"></div>
+                <div class="card-image pic108"></div>
+                <div class="card-image pic109"></div>
+                <div class="card-image pic110"></div>
+                <div class="card-image pic112"></div>
+                <div class="card-image pic113"></div> 
+                <div class="card-image pic114"></div>      
+                <div class="card-image pic115"></div>   
+                <div class="card-image pic116"></div>
+                <div class="card-image pic117"></div>
+                <div class="card-image pic118"></div>
+                <div class="card-image pic119"></div>
+                <div class="card-image pic120"></div>
+                <div class="card-image pic121"></div>
+                <div class="card-image pic122"></div>   
+                <div class="card-image pic123"></div>  
+                <div class="card-image pic124"></div>      
+                <div class="card-image pic125"></div>   
+                <div class="card-image pic126"></div>
+                <div class="card-image pic127"></div>
+                <div class="card-image pic128"></div>
+                <div class="card-image pic129"></div>
+                <div class="card-image pic130"></div>
+                <div class="card-image pic131"></div>
+                <div class="card-image pic132"></div>
+                <div class="card-image pic133"></div>
+                <div class="card-image pic134"></div>
+                <div class="card-image pic135"></div>
+                <div class="card-image pic136"></div>
+                <div class="card-image pic137"></div>
+                <div class="card-image pic138"></div>   
+                <div class="card-image pic139"></div>  
+                <div class="card-image pic140"></div> 
+                <div class="card-image pic141"></div>   
+                <div class="card-image pic142"></div>
+                <div class="card-image pic143"></div>
+                <div class="card-image pic144"></div>
+                <div class="card-image pic145"></div>
+                <div class="card-image pic146"></div>
+                <div class="card-image pic147"></div>
+                <div class="card-image pic148"></div>
+                <div class="card-image pic149"></div>
+                <div class="card-image pic150"></div>
+                <div class="card-image pic151"></div>
+                <div class="card-image pic152"></div>
+                <div class="card-image pic153"></div>
+                <div class="card-image pic154"></div>   
+                <div class="card-image pic155"></div>  
+                <div class="card-image pic156"></div>      
+                <div class="card-image pic157"></div>   
+                <div class="card-image pic158"></div>
+                <div class="card-image pic159"></div>
+                <div class="card-image pic160"></div>
+            </div>  
+            <div class="pics"> 
+                <div class="card-image pic161"></div>
+                <div class="card-image pic162"></div>
+                <div class="card-image pic163"></div>
+                <div class="card-image pic164"></div>
+                <div class="card-image pic165"></div>
+                <div class="card-image pic166"></div>
+                <div class="card-image pic167"></div>
+                <div class="card-image pic168"></div>
+                <div class="card-image pic169"></div>
+                <div class="card-image pic170"></div>   
+                <div class="card-image pic171"></div>  
+                <div class="card-image pic172"></div>      
+                <div class="card-image pic173"></div>   
+                <div class="card-image pic174"></div>
+                <div class="card-image pic175"></div>
+                <div class="card-image pic176"></div>
+                <div class="card-image pic177"></div>  
+                <div class="card-image pic178"></div>  
+                <div class="card-image pic179"></div>  
+                <div class="card-image pic180"></div>            
+                <div class="card-image pic181"></div>
+                <div class="card-image pic182"></div>   
+                <div class="card-image pic183"></div>
+                <div class="card-image pic184"></div>
+                <div class="card-image pic185"></div>   
+                <div class="card-image pic186"></div>  
+                <div class="card-image pic187"></div>      
+                <div class="card-image pic188"></div>   
+                <div class="card-image pic189"></div>
+                <div class="card-image pic190"></div>
+                <div class="card-image pic191"></div>
+                <div class="card-image pic192"></div>   
+                <div class="card-image pic193"></div>
+                <div class="card-image pic194"></div>
+                <div class="card-image pic195"></div>   
+                <div class="card-image pic196"></div>  
+                <div class="card-image pic197"></div>      
+                <div class="card-image pic198"></div>   
+                <div class="card-image pic199"></div>
+                <div class="card-image pic200"></div>
+                <div class="card-image pic201"></div>
+                <div class="card-image pic202"></div> 
+                <div class="card-image pic203"></div> 
+                <div class="card-image pic204"></div>   
+                <div class="card-image pic205"></div>
+                <div class="card-image pic206"></div>
+                <div class="card-image pic207"></div>
+                <div class="card-image pic208"></div>
+                <div class="card-image pic209"></div>
+                <div class="card-image pic210"></div>
+                <div class="card-image pic211"></div>
+                <div class="card-image pic212"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="screen2">
+        <div class="containermain">
+            <div class="videos-grid">
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./JANUARY(24)/v1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./JANUARY(24)/v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./JANUARY(24)/v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v8.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v9.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v10.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v11.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v12.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v13.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v14.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v15.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v16.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v17.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v18.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v19.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v20.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./JANUARY(24)/v21.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v22.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v23.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v24.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v25.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v26.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v27.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v28.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                              <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v29.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v30.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v31.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v32.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v33.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v34.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v35.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v36.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v37.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v38.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v39.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v40.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./JANUARY(24)/v41.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    
+                    
+            </div>
+        </div>
+    </div>
+
+    <button id="myButton"><a href="section1.html">Back</a></button>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+        });
+    </script>
+
+</body>
+</html>

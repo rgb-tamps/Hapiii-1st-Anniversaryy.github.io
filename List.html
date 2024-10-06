@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>List✨</title>
+    <style>
+            body {
+    background-image: url(./Lover\ Background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgb(105, 143, 180);
+    border-radius: 5px;
+    border: none; /* Fixed border issue */
+    margin: 10px;
+    padding: 10px ; /* Adjusted padding */
+    text-align: center;
+    position: fixed;
+    bottom: 20px; /* Adjusted for mobile */
+    right: 50px; /* Adjusted for mobile */
+    z-index: 1000; /* Ensure button is on top */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+        button:hover {
+            background-color: rgb(85, 123, 160);
+        }
+
+        button:active {
+            background-color: rgb(65, 103, 140);
+            transform: translateY(2px);
+        }
+
+a {
+    text-decoration: none;
+    color: rgb(245, 230, 199);
+    padding: 10px 60px;
+    
+}
+
+.containermain {
+background-color: rgba(179, 191, 217, 0.5);
+border-radius: 10px;
+width: 95%; /* Use 95% for mobile */
+margin: 10px auto;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(1, 1fr); /* 3 columns */
+gap: 10px; /* Space between images */
+box-sizing: border-box;
+justify-content: center;
+}
+
+.card-image {
+background-color: #f8f8f8;
+height: 5000px; /* Adjusted height */
+width: 550px;
+border-radius: 15px;
+background-size: cover;
+margin: 20px;
+}
+
+.pics {
+margin: 5px; /* This can be removed */
+
+}
+
+
+.screen1{
+    padding: 10px; /* Add padding for better spacing */
+}
+
+
+        .pic1 { background-image: url('./list.jpg'); }
+    
+        
+@media (max-width: 600px) {
+            * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  } 
+            button {
+                width: 90%; /* Full width button on mobile */
+                padding: 15px 30px; /* More padding */
+                right: auto;
+            }
+            a {
+                padding: 10px 100px;
+            }
+        
+            .containermain {
+        border-radius: 10px;
+         width: 100%; /* Use 95% for mobile */
+         margin: 5px 0;
+         padding: 5px 0;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr); /* 3 columns */
+         gap: 10px; /* Space between images */
+         box-sizing: border-box;
+}
+
+.card-image {
+background-color: #f8f8f8;
+height: 5000px; /* Adjusted height */
+width: 550px;
+border-radius: 15px;
+background-size: cover;
+margin: 20px;
+}
+ 
+        .pics {
+            margin: 0.005rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="screen1">
+    <div class="containermain">
+    <div class="pics">
+        <div class="card-image pic1"></div>
+       
+     </div>
+    </div>
+</div>
+
+    
+    <button><a href="section1.html">Back</a></button> 
+  
+</body>
+</html>

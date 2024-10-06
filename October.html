@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>October(2023)</title>
+    <style>
+       body {
+    background-image: url(./Lover\ Background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgb(105, 143, 180);
+    border-radius: 5px;
+    border: none; /* Fixed border issue */
+    margin: 10px;
+    padding: 10px ; /* Adjusted padding */
+    text-align: center;
+    position: fixed;
+    bottom: 20px; /* Adjusted for mobile */
+    right: 50px; /* Adjusted for mobile */
+    z-index: 1000; /* Ensure button is on top */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+        button:hover {
+            background-color: rgb(85, 123, 160);
+        }
+
+        button:active {
+            background-color: rgb(65, 103, 140);
+            transform: translateY(2px);
+        }
+
+a {
+    text-decoration: none;
+    color: rgb(245, 230, 199);
+    padding: 10px 60px;
+    
+}
+
+.containermain {
+background-color: rgba(179, 191, 217, 0.5);
+border-radius: 10px;
+width: 95%; /* Use 95% for mobile */
+margin: 10px auto;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 3 columns */
+gap: 10px; /* Space between images */
+box-sizing: border-box;
+}
+
+.card-image {
+background-color: #f8f8f8;
+height: 450px; /* Adjusted height */
+border-radius: 15px;
+background-size: cover;
+margin: 20px;
+}
+
+.pics {
+margin: 5px; /* This can be removed */
+gap: 10px;
+
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted */
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+.videos-grid {
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.screen1, .screen2 {
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Background images for the pictures */
+.pic1 { background-image: url('./OCTOBER/oct1.jpeg'); }
+.pic2 { background-image: url('./OCTOBER/oct2.jpg'); }
+.pic3 { background-image: url('./OCTOBER/oct3.jpg'); }
+.pic4 { background-image: url('./OCTOBER/oct4.jpg'); }
+.pic5 { background-image: url('./OCTOBER/oct5.jpg'); }
+.pic6 { background-image: url('./OCTOBER/oct6.jpg'); }
+.pic7 { background-image: url('./OCTOBER/oct7.jpg'); }
+.pic8 { background-image: url('./OCTOBER/oct8.jpg'); }
+.pic9 { background-image: url('./OCTOBER/oct9.jpg'); }
+.pic10 { background-image: url('./OCTOBER/oct10.jpg'); }
+.pic11 { background-image: url('./OCTOBER/oct11.jpg'); }
+.pic12 { background-image: url('./OCTOBER/oct12.jpg'); }
+.pic13 { background-image: url('./OCTOBER/oct13.jpg'); }
+.pic14 { background-image: url('./OCTOBER/oct14.jpg'); }
+.pic15 { background-image: url('./OCTOBER/oct15.jpg'); }
+.pic16 { background-image: url('./OCTOBER/oct16.jpg'); }
+.pic17 { background-image: url('./OCTOBER/oct17.jpg'); }
+.pic18 { background-image: url('./OCTOBER/oct18.jpg'); }
+.pic19 { background-image: url('./OCTOBER/oct19.jpg'); }
+.pic20 { background-image: url('./OCTOBER/oct20.jpg'); }
+.pic21 { background-image: url('./OCTOBER/oct21.jpg'); }
+.pic22 { background-image: url('./OCTOBER/oct22.jpg'); }
+.pic23 { background-image: url('./OCTOBER/oct23.jpg'); }
+.pic24 { background-image: url('./OCTOBER/oct24.jpg'); }
+.pic25 { background-image: url('./OCTOBER/oct25.jpg'); }
+.pic26 { background-image: url('./OCTOBER/oct26.jpg'); }
+.pic27 { background-image: url('./OCTOBER/oct27.jpg'); }
+.pic28 { background-image: url('./OCTOBER/oct28.jpg'); }
+.pic29 { background-image: url('./OCTOBER/oct29.jpg'); }
+.pic30 { background-image: url('./OCTOBER/oct30.jpg'); }
+.pic31 { background-image: url('./OCTOBER/oct31.jpg'); }
+.pic32 { background-image: url('./OCTOBER/oct32.jpg'); }
+.pic33 { background-image: url('./OCTOBER/oct33.jpg'); }
+.pic34 { background-image: url('./OCTOBER/oct34.jpg'); }
+.pic35 { background-image: url('./OCTOBER/oct35.jpg'); }
+.pic36 { background-image: url('./OCTOBER/oct36.jpg'); }
+.pic37 { background-image: url('./OCTOBER/oct37.jpg'); }
+.pic38 { background-image: url('./OCTOBER/oct38.jpg'); }
+.pic39 { background-image: url('./OCTOBER/oct39.jpg'); }
+.pic40 { background-image: url('./OCTOBER/oct40.jpeg'); }
+.pic41 { background-image: url('./OCTOBER/oct41.jpeg'); }
+.pic42 { background-image: url('./OCTOBER/oct42.jpeg'); }
+.pic43 { background-image: url('./OCTOBER/oct44.jpeg'); }
+.pic44 { background-image: url('./OCTOBER/oct45.jpeg'); }
+.pic45 { background-image: url('./OCTOBER/oct46.jpeg'); }
+.pic46 { background-image: url('./OCTOBER/oct47.jpeg'); }
+.pic47 { background-image: url('./OCTOBER/oct48.jpeg'); }
+.pic48 { background-image: url('./OCTOBER/oct49.jpeg'); }
+.pic49 { background-image: url('./OCTOBER/oct50.jpeg'); }
+.pic50 { background-image: url('./OCTOBER/oct51.jpeg'); }
+.pic51 { background-image: url('./OCTOBER/oct52.jpeg'); }
+.pic52 { background-image: url('./OCTOBER/oct53.jpeg'); }
+.pic53 { background-image: url('./OCTOBER/oct54.jpeg'); }
+.pic54 { background-image: url('./OCTOBER/oct55.jpeg'); }
+.pic55 { background-image: url('./OCTOBER/oct56.jpeg'); }
+.pic56 { background-image: url('./OCTOBER/oct57.jpeg'); }
+.pic57 { background-image: url('./OCTOBER/oct58.jpeg'); }
+.pic58 { background-image: url('./OCTOBER/oct59.jpeg'); }
+.pic59 { background-image: url('./OCTOBER/oct60.jpeg'); }
+.pic60 { background-image: url('./OCTOBER/oct61.jpeg'); }
+.pic61 { background-image: url('./OCTOBER/oct62.jpeg'); }
+.pic62 { background-image: url('./OCTOBER/oct63.jpeg'); }
+.pic63 { background-image: url('./OCTOBER/oct64.jpeg'); }
+.pic64 { background-image: url('./OCTOBER/oct65.jpeg'); }
+.pic65 { background-image: url('./OCTOBER/oct66.jpeg'); }
+.pic66 { background-image: url('./OCTOBER/oct67.jpeg'); }
+.pic67 { background-image: url('./OCTOBER/oct68.jpeg'); }
+.pic68 { background-image: url('./OCTOBER/oct69.jpeg'); }
+.pic69 { background-image: url('./OCTOBER/oct70.jpeg'); }
+.pic70 { background-image: url('./OCTOBER/oct71.jpeg'); }
+.pic71 { background-image: url('./OCTOBER/oct72.jpeg'); }
+.pic72 { background-image: url('./OCTOBER/oct73.jpeg'); }
+.pic73 { background-image: url('./OCTOBER/oct74.jpeg'); }
+.pic74 { background-image: url('./OCTOBER/oct75.jpeg'); }
+.pic75 { background-image: url('./OCTOBER/oct76.jpeg'); }
+.pic76 { background-image: url('./OCTOBER/oct77.jpeg'); }
+.pic77 { background-image: url('./OCTOBER/oct78.jpeg'); }
+.pic78 { background-image: url('./OCTOBER/oct79.jpeg'); }
+.pic79 { background-image: url('./OCTOBER/oct80.jpeg'); }
+.pic80 { background-image: url('./OCTOBER/oct81.jpeg'); }
+.pic81 { background-image: url('./OCTOBER/oct82.jpeg'); }
+.pic82 { background-image: url('./OCTOBER/oct83.jpeg'); }
+.pic83 { background-image: url('./OCTOBER/oct84.jpeg'); }
+.pic84 { background-image: url('./OCTOBER/oct85.jpeg'); }
+.pic85 { background-image: url('./OCTOBER/oct86.jpeg'); }
+.pic86 { background-image: url('./OCTOBER/oct87.jpeg'); }
+.pic87 { background-image: url('./OCTOBER/oct88.jpeg'); }
+.pic88 { background-image: url('./OCTOBER/oct89.jpeg'); }
+.pic89 { background-image: url('./OCTOBER/oct90.jpeg'); }
+.pic90 { background-image: url('./OCTOBER/oct91.jpeg'); }
+.pic91 { background-image: url('./OCTOBER/oct92.jpeg'); }
+.pic92 { background-image: url('./OCTOBER/oct93.jpeg'); }
+.pic93 { background-image: url('./OCTOBER/oct94.jpeg'); }
+.pic94 { background-image: url('./OCTOBER/oct95.jpeg'); }
+.pic95 { background-image: url('./OCTOBER/oct96.jpeg'); }
+.pic96 { background-image: url('./OCTOBER/oct97.jpeg'); }
+.pic97 { background-image: url('./OCTOBER/oct98.jpeg'); }
+.pic98 { background-image: url('./OCTOBER/oct99.jpeg'); }
+.pic99 { background-image: url('./OCTOBER/oct100.jpeg'); }
+.pic100 { background-image: url('./OCTOBER/oct101.jpeg'); }
+.pic101 { background-image: url('./OCTOBER/oct102.jpeg'); }
+.pic102 { background-image: url('./OCTOBER/oct103.jpeg'); }
+.pic103 { background-image: url('./OCTOBER/oct104.jpeg'); }
+.pic104 { background-image: url('./OCTOBER/oct105.jpeg'); }
+.pic105 { background-image: url('./OCTOBER/oct106.jpeg'); }
+.pic106 { background-image: url('./OCTOBER/oct107.jpeg'); }
+.pic107 { background-image: url('./OCTOBER/oct108.jpeg'); }
+.pic108 { background-image: url('./OCTOBER/oct109.jpeg'); }
+.pic109 { background-image: url('./OCTOBER/oct110.jpeg'); }
+.pic110 { background-image: url('./OCTOBER/oct111.jpeg'); }
+.pic111 { background-image: url('./OCTOBER/oct112.jpeg'); }
+.pic112 { background-image: url('./OCTOBER/oct113.jpeg'); }
+.pic113 { background-image: url('./OCTOBER/oct114.jpeg'); }
+.pic114 { background-image: url('./OCTOBER/oct115.jpeg'); }
+.pic115 { background-image: url('./OCTOBER/oct116.jpeg'); }
+.pic116 { background-image: url('./OCTOBER/oct117.jpeg'); }
+.pic117 { background-image: url('./OCTOBER/oct118.jpeg'); }
+.pic118 { background-image: url('./OCTOBER/oct119.jpeg'); }
+.pic119 { background-image: url('./OCTOBER/oct120.jpeg'); }
+.pic120 { background-image: url('./OCTOBER/oct121.jpeg'); }
+.pic121 { background-image: url('./OCTOBER/oct122.jpeg'); }
+.pic122 { background-image: url('./OCTOBER/oct123.jpeg'); }
+.pic123 { background-image: url('./OCTOBER/oct124.jpeg'); }
+.pic124 { background-image: url('./OCTOBER/oct125.jpeg'); }
+.pic125 { background-image: url('./OCTOBER/oct126.jpeg'); }
+.pic126 { background-image: url('./OCTOBER/oct127.jpeg'); }
+.pic127 { background-image: url('./OCTOBER/oct128.jpeg'); }
+.pic128 { background-image: url('./OCTOBER/oct129.jpeg'); }
+.pic129 { background-image: url('./OCTOBER/oct130.jpeg'); }
+.pic130 { background-image: url('./OCTOBER/oct131.jpeg'); }
+.pic131 { background-image: url('./OCTOBER/oct132.jpeg'); }
+.pic132 { background-image: url('./OCTOBER/oct133.jpeg'); }
+.pic133 { background-image: url('./OCTOBER/oct134.jpeg'); }
+.pic134 { background-image: url('./OCTOBER/oct135.jpeg'); }
+.pic135 { background-image: url('./OCTOBER/oct136.jpeg'); }
+.pic136 { background-image: url('./OCTOBER/oct137.jpeg'); }
+.pic137 { background-image: url('./OCTOBER/oct138.jpeg'); }
+.pic138 { background-image: url('./OCTOBER/oct139.jpeg'); }
+.pic139 { background-image: url('./OCTOBER/oct140.jpeg'); }
+.pic140 { background-image: url('./OCTOBER/oct141.jpeg'); }
+.pic141 { background-image: url('./OCTOBER/oct142.jpeg'); }
+.pic142 { background-image: url('./OCTOBER/oct143.jpeg'); }
+.pic143 { background-image: url('./OCTOBER/oct144.jpeg'); }
+.pic144 { background-image: url('./OCTOBER/oct145.jpeg'); }
+.pic145 { background-image: url('./OCTOBER/oct146.jpeg'); }
+.pic146 { background-image: url('./OCTOBER/oct147.jpeg'); }
+.pic147 { background-image: url('./OCTOBER/oct148.jpeg'); }
+.pic148 { background-image: url('./OCTOBER/oct149.jpeg'); }
+.pic149 { background-image: url('./OCTOBER/oct150.jpeg'); }
+.pic150 { background-image: url('./OCTOBER/oct151.jpg'); }
+.pic151 { background-image: url('./OCTOBER/oct152.jpg'); }
+.pic152 { background-image: url('./OCTOBER/oct153.jpg'); }
+.pic153 { background-image: url('./OCTOBER/oct154.jpg'); }
+.pic154 { background-image: url('./OCTOBER/oct155.jpg'); }
+.pic155 { background-image: url('./OCTOBER/oct156.jpg'); }
+.pic156 { background-image: url('./OCTOBER/oct157.jpg'); }
+.pic157 { background-image: url('./OCTOBER/oct158.jpg'); }
+.pic158 { background-image: url('./OCTOBER/oct159.jpg');}
+.pic159 { background-image: url('./OCTOBER/oct43.jpeg'); }
+
+
+
+
+
+        @media (max-width: 600px) {
+            * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  } 
+            button {
+                width: 90%; /* Full width button on mobile */
+                padding: 15px 30px; /* More padding */
+                right: auto;
+            }
+            a {
+                padding: 10px 100px;
+            }
+        
+            .containermain {
+        border-radius: 10px;
+         width: 100%; /* Use 95% for mobile */
+         margin: 5px 0;
+         padding: 5px 0;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr); /* 3 columns */
+         gap: 10px; /* Space between images */
+         box-sizing: border-box;
+}
+
+.card-image {
+            height: 190px; /* Smaller images for mobile */
+            width: 150px;
+            padding: 5px;
+            margin: 10px;
+        }
+        .pics {
+            margin: 0.005rem;
+        }
+            .videos video {
+                width: 150%; /* Full width videos */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="screen1">
+        <div class="containermain">
+            <div class="pics">
+                <div class="card-image pic1"></div>
+                <div class="card-image pic2"></div>      
+                <div class="card-image pic3"></div>      
+                <div class="card-image pic4"></div>   
+                <div class="card-image pic5"></div>
+                <div class="card-image pic6"></div>
+                <div class="card-image pic7"></div>
+                <div class="card-image pic8"></div>
+                <div class="card-image pic9"></div>
+                <div class="card-image pic10"></div>
+                <div class="card-image pic11"></div>
+                <div class="card-image pic12"></div> 
+                <div class="card-image pic13"></div>      
+                <div class="card-image pic14"></div>   
+                <div class="card-image pic15"></div>
+                <div class="card-image pic16"></div>
+                <div class="card-image pic17"></div>
+                <div class="card-image pic18"></div>
+                <div class="card-image pic19"></div>
+                <div class="card-image pic20"></div>
+                <div class="card-image pic21"></div>
+                <div class="card-image pic22"></div> 
+                <div class="card-image pic23"></div>      
+                <div class="card-image pic24"></div>   
+                <div class="card-image pic25"></div>
+                <div class="card-image pic26"></div>
+                <div class="card-image pic27"></div>
+                <div class="card-image pic28"></div>
+                <div class="card-image pic29"></div>
+                <div class="card-image pic30"></div>
+                <div class="card-image pic31"></div>   
+                <div class="card-image pic32"></div>  
+                <div class="card-image pic33"></div>      
+                <div class="card-image pic34"></div>   
+                <div class="card-image pic35"></div>
+                <div class="card-image pic36"></div>
+                <div class="card-image pic37"></div>
+                <div class="card-image pic38"></div>
+                <div class="card-image pic39"></div>
+                <div class="card-image pic40"></div>     
+            </div>
+            <div class="pics">   
+                <div class="card-image pic41"></div>
+                <div class="card-image pic42"></div>
+                <div class="card-image pic43"></div>
+                <div class="card-image pic44"></div>
+                <div class="card-image pic45"></div>
+                <div class="card-image pic46"></div>
+                <div class="card-image pic47"></div>
+                <div class="card-image pic48"></div>
+                <div class="card-image pic49"></div>
+                <div class="card-image pic50"></div>
+                <div class="card-image pic51"></div>
+                <div class="card-image pic52"></div>
+                <div class="card-image pic53"></div>  
+                <div class="card-image pic54"></div>
+                <div class="card-image pic55"></div>
+                <div class="card-image pic56"></div>
+                <div class="card-image pic57"></div>
+                <div class="card-image pic58"></div>
+                <div class="card-image pic59"></div>
+                <div class="card-image pic60"></div>
+                <div class="card-image pic61"></div>
+                <div class="card-image pic62"></div>
+                <div class="card-image pic63"></div>   
+                <div class="card-image pic64"></div>  
+                <div class="card-image pic65"></div>      
+                <div class="card-image pic66"></div>   
+                <div class="card-image pic67"></div>
+                <div class="card-image pic68"></div>
+                <div class="card-image pic69"></div>
+                <div class="card-image pic70"></div>
+                <div class="card-image pic71"></div>
+                <div class="card-image pic72"></div>
+                <div class="card-image pic73"></div>
+                <div class="card-image pic74"></div>
+                <div class="card-image pic75"></div>
+                <div class="card-image pic76"></div>
+                <div class="card-image pic77"></div>
+                <div class="card-image pic78"></div>
+                <div class="card-image pic79"></div>   
+                <div class="card-image pic80"></div>  
+            </div>
+            <div class="pics">
+                <div class="card-image pic81"></div>      
+                <div class="card-image pic82"></div>   
+                <div class="card-image pic83"></div>
+                <div class="card-image pic84"></div>
+                <div class="card-image pic85"></div>
+                <div class="card-image pic86"></div>
+                <div class="card-image pic87"></div>      
+                <div class="card-image pic88"></div>      
+                <div class="card-image pic89"></div>
+                <div class="card-image pic90"></div>  
+                <div class="card-image pic91"></div>
+                <div class="card-image pic92"></div>      
+                <div class="card-image pic93"></div>      
+                <div class="card-image pic94"></div>   
+                <div class="card-image pic95"></div>
+                <div class="card-image pic96"></div>
+                <div class="card-image pic97"></div>
+                <div class="card-image pic98"></div>
+                <div class="card-image pic99"></div>
+                <div class="card-image pic100"></div>
+                <div class="card-image pic101"></div>
+                <div class="card-image pic102"></div> 
+                <div class="card-image pic103"></div>      
+                <div class="card-image pic104"></div>   
+                <div class="card-image pic105"></div>
+                <div class="card-image pic106"></div>
+                <div class="card-image pic107"></div>
+                <div class="card-image pic108"></div>
+                <div class="card-image pic109"></div>
+                <div class="card-image pic110"></div>
+                <div class="card-image pic112"></div>
+                <div class="card-image pic113"></div> 
+                <div class="card-image pic114"></div>      
+                <div class="card-image pic115"></div>   
+                <div class="card-image pic116"></div>
+                <div class="card-image pic117"></div>
+                <div class="card-image pic118"></div>
+                <div class="card-image pic119"></div>
+                <div class="card-image pic120"></div>
+            </div>
+            <div class="pics"> 
+                <div class="card-image pic121"></div>
+                <div class="card-image pic122"></div>   
+                <div class="card-image pic123"></div>  
+                <div class="card-image pic124"></div>      
+                <div class="card-image pic125"></div>   
+                <div class="card-image pic126"></div>
+                <div class="card-image pic127"></div>
+                <div class="card-image pic128"></div>
+                <div class="card-image pic129"></div>
+                <div class="card-image pic130"></div>
+                <div class="card-image pic131"></div>
+                <div class="card-image pic132"></div>
+                <div class="card-image pic133"></div>
+                <div class="card-image pic134"></div>
+                <div class="card-image pic135"></div>
+                <div class="card-image pic136"></div>
+                <div class="card-image pic137"></div>
+                <div class="card-image pic138"></div>   
+                <div class="card-image pic139"></div>  
+                <div class="card-image pic140"></div>      
+                <div class="card-image pic141"></div>   
+                <div class="card-image pic142"></div>
+                <div class="card-image pic143"></div>
+                <div class="card-image pic144"></div>
+                <div class="card-image pic145"></div>
+                <div class="card-image pic146"></div>
+                <div class="card-image pic147"></div>
+                <div class="card-image pic148"></div>
+                <div class="card-image pic149"></div>
+                <div class="card-image pic150"></div>
+                <div class="card-image pic151"></div>
+                <div class="card-image pic152"></div>
+                <div class="card-image pic153"></div>
+                <div class="card-image pic154"></div>   
+                <div class="card-image pic155"></div>  
+                <div class="card-image pic156"></div>      
+                <div class="card-image pic157"></div>   
+                <div class="card-image pic158"></div>
+                <div class="card-image pic159"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="screen2">
+        <div class="containermain">
+            <div class="videos-grid">
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./OCTOBER/v1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./OCTOBER/v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                        <source src="./OCTOBER/v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videos">
+                    <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v8.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v9.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v10.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v11.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v12.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v13.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v14.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v15.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v16.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v17.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v18.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v19.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v20.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v21.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v22.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v23.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v24.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v25.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v26.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v27.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v28.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v29.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v30.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v31.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v32.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v33.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v34.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v35.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v36.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v37.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v38.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v39.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v40.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v41.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v42.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v43.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v44.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v45.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v46.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v47.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="640" height="360" controls>
+                            <source src="./OCTOBER/v48.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./OCTOBER/v49.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./OCTOBER/v50.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="videos">
+                            <video width="640" height="360" controls>
+                                <source src="./OCTOBER/v51.mp4" type="video/mp4">
+                            </video>
+                        </div>
+               
+
+
+            </div>
+        </div>
+    </div>
+
+    <button id="myButton"><a href="section1.html">Back</a></button>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+        });
+    </script>
+
+</body>
+</html>
