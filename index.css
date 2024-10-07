@@ -337,6 +337,7 @@ a {
             gap: 5px;
             position: absolute;
             left: 20px;
+             padding: 10px; 
         }
         
         .bar {
