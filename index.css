@@ -483,7 +483,7 @@ a {
         }    
         button:hover {
             background-color: rgb(85, 123, 160);
-    
+    padding: 5px;
         }
 
         button:active {
