@@ -557,5 +557,11 @@ a {
         margin-top: 950px;
         font-size: small;
     }
+            .footer{
+       display: flex;
+       justify-content: space-between;
+       gap: 10px;
+       align-items: flex-start;
+    }
     
     }
