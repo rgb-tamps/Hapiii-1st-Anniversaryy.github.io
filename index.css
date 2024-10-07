@@ -546,15 +546,21 @@ a {
         border: rgb(245, 230, 199) solid ;
     }
     
-           footer{
-            background-color: rgb(105, 143, 180);
-            color: #ffffff;
-            border: 10px;
-            display: flex;
-            padding: 20px;
-            justify-content: center;
-            margin-top: 200px;
-        
-        }
+          footer{
+        background-color: rgb(105, 143, 180);
+        color: #ffffff;
+        border: 10px;
+        display: flex;
+        padding: 80px;
+        width: auto;
+        justify-content: center;
+        margin-top: 300px;
+    }
+
+    .footer{
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
      
     }
