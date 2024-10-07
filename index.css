@@ -546,9 +546,15 @@ a {
         border: rgb(245, 230, 199) solid ;
     }
     
-        footer {
-            padding: 40px;
-            margin-top: 950px;
+           footer{
+            background-color: rgb(105, 143, 180);
+            color: #ffffff;
+            border: 10px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            margin-top: 200px;
+        
         }
      
     }
