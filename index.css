@@ -410,7 +410,7 @@ a {
         .item {
             width: 50%; /* Make .item full width */
             text-align: center;
-            gap: 5px;
+            gap: 3px;
             margin: 5px ;
         }
         a {
