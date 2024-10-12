@@ -468,23 +468,21 @@ a {
             margin-left:10px;
     
         }
-        button {
+         button {
             background-color: rgb(236, 179, 194);
             border: none;
             color: rgb(0, 0, 0);
-            padding: 5px 5px;
-            width: 90px;
+            padding: 5px 8px;
             display: flex; 
             border-radius: 10px;
             text-align: center;
             justify-content: center;
             box-sizing: border-box;
-            margin: 15px 3px;
-            
-        }    
+            margin: 15px 10px;  
+        }
+        
         button:hover {
             background-color: rgb(85, 123, 160);
-    padding: 5px;
         }
 
         button:active {
@@ -492,6 +490,7 @@ a {
             transform: translateY(2px);
         }
 
+        
          .section {
         height: 120vh; 
         display: flex;
