@@ -484,7 +484,7 @@ a {
             background-color: rgb(236, 179, 194);
             border: none;
             color: rgb(0, 0, 0);
-            padding: 10px 5px;
+            padding: 10px 0px;
             display: flex; 
             border-radius: 10px;
             text-align: center;
