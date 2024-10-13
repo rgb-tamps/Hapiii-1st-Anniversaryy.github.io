@@ -1,4 +1,3 @@
-
 {          
     box-sizing: border-box;  
     width: 5%;
@@ -203,7 +202,7 @@
     
         }
         
-    button, button-gallery {
+    button {
         background-color: rgb(236, 179, 194);
         border: none;
         color: rgb(0, 0, 0);
@@ -213,9 +212,24 @@
         text-align: center;
         justify-content: center;
         box-sizing: border-box;
-        margin: 15px 3px;
+        margin: 15px 10px;
         
     }
+    .button-gallery{
+        background-color: rgb(236, 179, 194);
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        width: 150px;
+        height: 60px;
+        display: flex; 
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 15px 10px;  
+    }
+
        button:hover {
             background-color: rgb(85, 123, 160);
           
@@ -337,7 +351,6 @@ a {
             gap: 5px;
             position: absolute;
             left: 20px;
-             padding: 10px; 
         }
         
         .bar {
@@ -410,7 +423,6 @@ a {
         .item {
             width: 50%; /* Make .item full width */
             text-align: center;
-            gap: 3px;
             margin: 5px ;
         }
         a {
@@ -468,7 +480,7 @@ a {
             margin-left:10px;
     
         }
-         button {
+        button {
             background-color: rgb(236, 179, 194);
             border: none;
             color: rgb(0, 0, 0);
@@ -479,20 +491,22 @@ a {
             justify-content: center;
             box-sizing: border-box;
             margin: 15px 10px;  
+          
         }
-           .button-gallery{
+
+        .button-gallery{
             background-color: rgb(236, 179, 194);
             border: none;
             color: rgb(0, 0, 0);
-            padding: 10px 0px;
+            padding: 10px 3px;
             display: flex; 
             border-radius: 10px;
             text-align: center;
             justify-content: center;
             box-sizing: border-box;
-            margin: 15px 10px;  
+            margin: 5px 5px;  
+            width: 90px;
         }
-        
         button:hover {
             background-color: rgb(85, 123, 160);
         }
@@ -502,7 +516,6 @@ a {
             transform: translateY(2px);
         }
 
-        
          .section {
         height: 120vh; 
         display: flex;
@@ -559,7 +572,7 @@ a {
         border: rgb(245, 230, 199) solid ;
     }
     
-          footer{
+            footer{
         background-color: rgb(105, 143, 180);
         color: #ffffff;
         border: 10px;
