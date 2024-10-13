@@ -335,7 +335,7 @@ a {
     
 
 
-    @media (max-width: 600px) {
+    @media (max-width: 730px) {
         * {
             box-sizing: border-box;
           }
@@ -496,15 +496,16 @@ a {
 
         .containerleft {
             width: 100%;
-            height: 130vh;
-            padding: 5px 15px;
+            height: 900px;
+            padding: 5px ;
             margin: 5px;
+            justify-content: center;
         }
         .text-box{
             background-color: rgb(253, 216, 163); 
             color:  rgb(255, 255, 255);
-            height: 125vh;
-            width: 45vh;
+            height:  800px;
+            width: 300px;
             margin: 5px ;
             padding: 20px 10px ;
             border-radius: 20px; 
@@ -514,11 +515,13 @@ a {
             font-size: small;
             margin-top: 25px;
             line-height: 20px;
+            padding: 20px;
             text-align: justify;
         }
         .containerleft h1{
-            font-size:35px;
+            font-size:xx-large;
             margin-left:0;
+            padding: 20px;
             padding: 10px 20px;
             text-align: justify;
         }
