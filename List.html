@@ -63,6 +63,13 @@ a {
     font-family: Arial, sans-serif;
 }
 
+.title{
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 179, 194);
+    grid-column: span 4;
+    height: auto;
+    text-align: center;
+}
 .card-image1, .card-image2{
     background-color: #ffffff; /* Default background color for both cards */
     height: auto;
@@ -142,31 +149,90 @@ span, ul{
             }
         
             .containermain {
-        border-radius: 10px;
-         width: 100%; /* Use 95% for mobile */
-         margin: 5px 0;
-         padding: 5px 0;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr); /* 3 columns */
-         box-sizing: border-box;
+    background-color: rgba(179, 191, 217, 0.5);
+    border-radius: 10px;
+    width: 95%; /* Use 95% for mobile */
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+    gap: 0; /* Set grid gap to zero */
 }
 
-.card-image {
-background-color: #f8f8f8;
-height: auto;
-border-radius: 15px;
-background-size: cover;
-margin: 20px;
+.box {
+    font-family: Arial, sans-serif;
 }
- 
+
+.title{
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 179, 194);
+    grid-column: span 4;
+    height: auto;
+    text-align: center;
+}
+.card-image1, .card-image2{
+    background-color: #ffffff; /* Default background color for both cards */
+    height: auto;
+    background-size: cover;
+    padding: 5px;
+    grid-column: span 2;
+    margin: 0; /* Remove margin */
+}
+
+.title h1 {
+    background-color: rgb(236, 179, 194);
+    color: #f8f8f8;
+    width: 260px;
+    padding: 10px;
+    margin: 5px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-image1 p {
+    color:rgb(240, 177, 90); 
+    font-size: 10px;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: justify;
+}
+
+.card-image2 p{
+    color:rgb(240, 177, 90); 
+    font-size: 10px;
+    margin: 0;
+    padding: 10px 0;
+    text-align: justify;
+}
+li{
+    color:rgb(240, 177, 90);  
+    font-size: 10px;
+}
+ul{
+    padding: 5px 0;
+    gap: 5px;
+    font-size:10px;
+}
+
+span{
+    padding: 5px ;
+    gap: 5px;
+    font-size:10px;
+}
+
+
     }
     </style>
 </head>
 <body>
     <div class="screen1">
     <div class="containermain">
+        <div class="title">
+        <h1>✨MY PALANGGA✨</h1>
+    </div>
         <div class="box card-image1">
-            <h1>✨MY PALANGGA✨</h1>
+          
             
             
         <p>
