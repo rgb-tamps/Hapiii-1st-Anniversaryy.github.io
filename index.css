@@ -123,7 +123,6 @@
         text-align: justify;
     }
      
-    
     .section {
         height: 120vh; 
         display: flex;
@@ -187,19 +186,29 @@
         margin: 20px  ;
         padding: 120px;
         border-radius: 20px;
-        text-align: justify;
+     
        
     }
-
+    .text-box{
+        background-color: rgb(253, 216, 163); 
+        color:  rgb(255, 255, 255);
+        height: 50vh;
+        width:60vh;
+        margin: 5px  ;
+        padding:70px;
+        border-radius: 20px; 
+        text-align: justify;
+    }
+ 
         .containerleft h1{
-            font-size: xx-large;
+            font-size: 35px;
             margin-left:10px;
-    
+            text-align: justify;
         }
         .containerleft p{
             margin-top: 20px;
             padding: 20px;
-    
+            line-height: 25px;
         }
         
     button {
@@ -253,6 +262,7 @@ a {
         align-items: center;
         align-content: center;
         text-align: center;
+        
     }
     
     /*Bottom box*/
@@ -263,6 +273,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
         padding: 10px;
         margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .low{
         grid-column: span 5;
@@ -271,28 +282,36 @@ a {
     }
     .box4 {
         background-color:rgb(247, 223, 189); 
-        color: black;
+        color: rgb(134, 83, 109);
         padding: 70px;
+        line-height: 30px;
         font-size: medium;
         height: 300px;
         border: rgb(245, 230, 199) solid ;
+        text-align: justify;
     }
     .box5 {
         background-color: rgb(239, 207, 210);
-        color: black;
+        color: rgb(134, 83, 109);
         padding: 70px;
+        line-height: 30px;
         font-size: medium;
         height: 300px;
         border: rgb(245, 230, 199) solid ;
+        text-align: justify;
     }
     .box6 {
         background-color: rgb(179, 191, 217);
-        color: black;
+        color: rgb(134, 83, 109);
         padding: 70px;
+        line-height: 30px;
         font-size: medium;
         height: 300px; 
-        border: rgb(245, 230, 199) solid ;
+        border: 
+        rgb(245, 230, 199) solid ;
+        text-align: justify;
     }
+
 
 
     footer{
@@ -304,7 +323,7 @@ a {
         height: 80%;
         width: auto;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     .footer{
@@ -467,18 +486,30 @@ a {
     
         .containerleft {
             width: 100%;
-            padding: 30px;
+            padding: 5px;
             margin: 5px;
         }
-    
+        .text-box{
+            background-color: rgb(253, 216, 163); 
+            color:  rgb(255, 255, 255);
+            height: 95vh;
+            width:40vh;
+            margin: 5px ;
+            padding:20px 10px;
+            border-radius: 20px; 
+            text-align: justify;
+        }
         .containerleft p{
             font-size: small;
             margin-top: 25px;
+            line-height: 20px;
+            text-align: justify;
         }
         .containerleft h1{
-            font-size: xx-large;
-            margin-left:10px;
-    
+            font-size:35px;
+            margin-left:5px;
+            padding: 10px 20px;
+            text-align: justify;
         }
         button {
             background-color: rgb(236, 179, 194);
@@ -539,6 +570,7 @@ a {
         height: 155% ;
         grid-template-columns: repeat(3, 1fr);
         margin-top:470px ;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .low{
         width: 100% ;
@@ -546,30 +578,36 @@ a {
     
     .box4 {
         border: rgb(245, 230, 199) solid ;
-        color: black;
-        padding: 10px;
+        color: rgb(134, 83, 109);
+        padding: 15px;
+        line-height: 15px;
         width: 300px;
-        height: 400px;
+        height: 630px;
         font-size: x-small;
         background-color:rgb(247, 223, 189); 
+        text-align: justify;
     }
     .box5 {
         background-color: rgb(239, 207, 210);
-        color: black;
+        color: rgb(134, 83, 109);
         padding: 10px;
+        line-height: 15px;
         width: 300px;
-        height: 400px;   
+        height: 570px;   
         font-size: x-small;
         border: rgb(245, 230, 199) solid ;
+        text-align: justify;
     }
     .box6 {
         background-color: rgb(179, 191, 217);
-        color: black;
+        color: rgb(134, 83, 109);
         padding: 10px;
+        line-height: 15px;
         width: 300px;
-        height: 400px;
+        height: 200px;
         font-size: x-small;
         border: rgb(245, 230, 199) solid ;
+        text-align: justify;
     }
     
             footer{
@@ -580,13 +618,21 @@ a {
         padding: 70px;
         width: auto;
         justify-content: center;
-        margin-top: 950px;
+        margin-top: 980px;
         font-size: xx-small;
     }
             .footer{
        display: flex;
-       gap: 10px;
+       gap: 5px;
        align-items: flex-start;
+
     }
+    .footer a{
+        display: flex;
+        gap: 5px;
+        align-items: flex-start;
+        padding: 10px;
+ 
+     }
     
     }
